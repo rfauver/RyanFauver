@@ -6,15 +6,16 @@ default: &default
 
 development:
   <<: *default
-  database: db_development
+  database: ryanfauver_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db_test
+  database: ryanfauver_test
 
 production:
   <<: *default
-  database: db_production
+  encoding: unicode
+  database: ryanfauver_production
