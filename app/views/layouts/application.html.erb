@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RyanFauver</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top center" role="navigation">
+      <div class="navbar-inner">
+        <div class ="container">
+          <nav>
+            <ul class ="nav navbar-nav">
+              <li><%= link_to "Portfolio", '#' %></li>
+              <li><%= link_to "Blog",      '#' %></li>
+              <li><%= link_to "Contact",   '#' %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-<%= yield %>
-
-</body>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
 </html>
