@@ -1,7 +1,13 @@
 <% provide(:title, "Contact") %>
 <div class="center hero-unit">
-  <p><%= link_to "Gmail", 'mailto:ryan.fauver@gmail.com' %></p>
-  <p><%= link_to "GitHub", 'https://github.com/rfauver' %></p>
-  <p><%= link_to "Twitter", 'https://twitter.com/rfauv' %></p>
-  <p><%= link_to "LinkedIn", 'Not yet' %></p>
+  <div class="text-center">
+    <h2>Contact Me</h3>
+    <h4><small>Email:</small> ryan.fauver@gmail.com</h3>
+
+    <%= link_to image_tag("github-32.png", size: "32x32")+" GitHub", 'https://github.com/rfauver', class: "btn btn-lg btn-success" %>
+    <%= link_to image_tag("twitter-32.png", size: "32x32")+" Twitter", 'https://twitter.com/rfauv', class: "btn btn-lg btn-info" %>
+    <%= link_to image_tag("linkedin-32.png", size: "32x32")+" LinkedIn", '#', class: "btn btn-lg btn-primary" %>
+  </div>
 </div>
+
+
