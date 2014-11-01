@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'blog/new'
+
   root 'static_pages#home'
   match '/contact',   to: 'static_pages#contact',   via: 'get'
   match '/portfolio', to: 'static_pages#portfolio', via: 'get'

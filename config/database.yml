@@ -3,17 +3,21 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
+  username: ryanfauver
+  password: 117539
 
 development:
   <<: *default
+  encoding: unicode
   database: ryanfauver_development
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
-  <<: *default
-  database: ryanfauver_test
+#test:
+#  <<: *default
+#  database: ryanfauver_test
 
 production:
   <<: *default
