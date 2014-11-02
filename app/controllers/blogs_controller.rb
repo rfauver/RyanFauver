@@ -16,6 +16,10 @@ class BlogsController < ApplicationController
     end
   end
 
+  def index
+    @blogs = Blog.all
+  end
+
   private
     def blog_params
       params.require(:blog).permit(:title, :content)

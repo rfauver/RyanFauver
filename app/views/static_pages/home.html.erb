@@ -1,3 +1,6 @@
-<div class="center hero-unit">
-  <p>Website under construction.</p>
-</div>
+<p>Website under construction.</p>
+<h1><%= link_to Blog.last.title, Blog.last %></h1>
+<h3>
+  <small>Posted on <%= Blog.last.created_at.to_formatted_s(:long_ordinal) %></small>
+</h3>
+<p><%= Blog.last.content %></p>
