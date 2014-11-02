@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   match '/contact',   to: 'static_pages#contact',   via: 'get'
   match '/portfolio', to: 'static_pages#portfolio', via: 'get'
+  resources :blog
+  resources :blogs
 
 
   # The priority is based upon order of creation: first created -> highest priority.
