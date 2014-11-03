@@ -1,4 +1,6 @@
 class BlogsController < ApplicationController
+  http_basic_authenticate_with name: ENV["USERNAME"], password: ENV["PASSWORD"], only: :new
+
   def show
     @blog = Blog.find(params[:id])
   end
