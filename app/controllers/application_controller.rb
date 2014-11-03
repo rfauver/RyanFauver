@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
     words = content.split
     shorter_words = []
     words.each_with_index do |word, i|
-      if i < 150
+      if i < 140
         shorter_words << word
       end
     end

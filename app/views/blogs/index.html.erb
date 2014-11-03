@@ -1,5 +1,5 @@
 <% provide(:title, 'Blog') %>
-<% @blogs.reverse.each do |blog| %>
+<% @blogs.each do |blog| %>
   <h1><%=link_to blog.title, blog %></h1>
   <h3>
     <small>Posted on <%= blog.created_at.to_formatted_s(:long_ordinal) %></small>
