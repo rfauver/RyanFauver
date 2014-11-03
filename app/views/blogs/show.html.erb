@@ -3,4 +3,4 @@
 <h3>
   <small>Posted on <%= @blog.created_at.to_formatted_s(:long_ordinal) %></small>
 </h3>
-<p><%= @blog.content %></p>
+<p><%= @blog.content.html_safe %></p>

@@ -3,4 +3,7 @@
 <h3>
   <small>Posted on <%= Blog.last.created_at.to_formatted_s(:long_ordinal) %></small>
 </h3>
-<p><%= Blog.last.content %></p>]
+<p>
+  <%= content_preview(Blog.last.content).html_safe %>
+  <small><%= link_to " read more >>", Blog.last %></small>
+</p>

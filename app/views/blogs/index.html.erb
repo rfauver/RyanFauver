@@ -4,6 +4,12 @@
   <h3>
     <small>Posted on <%= blog.created_at.to_formatted_s(:long_ordinal) %></small>
   </h3>
-  <p><%= blog.content %></p>
-  <br>
+  <p>
+    <%= content_preview(blog.content).html_safe %>
+    <small><%= link_to " read more >>", blog %></small>
+  </p>
+  <% unless blog == @blogs.first %>
+    <br>
+  <% end %>
 <% end %>
+<%= paginate @blogs %>
