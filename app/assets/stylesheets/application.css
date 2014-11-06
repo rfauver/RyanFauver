@@ -12,12 +12,29 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap.min
  */
 
-.navbar.center .navbar-inner {
-    text-align: center;
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
-.navbar.center .navbar-inner .nav {
-    float: none;
-    display:inline-block;
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.page-title {
+  background-color: #0F5933;
+}
+
+h1 a{
+  color: #000;
+}
+
+h1 a:hover{
+  color: #444;
+  text-decoration: none;
 }

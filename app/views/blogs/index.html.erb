@@ -8,8 +8,6 @@
     <%= content_preview(blog.content).html_safe %>
     <small><%= link_to " read more >>", blog %></small>
   </p>
-  <% unless blog == @blogs.first %>
-    <br>
-  <% end %>
+
 <% end %>
 <%= paginate @blogs %>
