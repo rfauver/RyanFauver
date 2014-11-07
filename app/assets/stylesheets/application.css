@@ -39,3 +39,8 @@ h1 a:hover{
   color: #444;
   text-decoration: none;
 }
+
+#nav-wrapper.affix {
+  top:0;
+  width: 100%;
+}
