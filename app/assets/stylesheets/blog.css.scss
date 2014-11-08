@@ -1,3 +1,14 @@
 // Place all the styles related to the Blog controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#even_comment {
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 15px;
+}
+#odd_comment {
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 15px;
+}

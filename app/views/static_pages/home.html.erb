@@ -1,6 +1,9 @@
 <h1><%= link_to Blog.last.title, Blog.last %></h1>
 <h3>
-  <small>Posted on <%= Blog.last.created_at.to_formatted_s(:long_ordinal) %></small>
+  <small>
+    Posted on <%= Blog.last.created_at.to_formatted_s(:long_ordinal) %>
+    | <%= pluralize(Blog.last.comments.count, 'Comment') %>
+  </small>
 </h3>
 <p>
   <%= content_preview(Blog.last.content).html_safe %>

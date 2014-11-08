@@ -2,7 +2,10 @@
 <% @blogs.each do |blog| %>
   <h1><%=link_to blog.title, blog %></h1>
   <h3>
-    <small>Posted on <%= blog.created_at.to_formatted_s(:long_ordinal) %></small>
+    <small>
+      Posted on <%= blog.created_at.to_formatted_s(:long_ordinal) %>
+      | <%= pluralize(blog.comments.count, 'Comment')%>
+    </small>
   </h3>
   <p>
     <%= content_preview(blog.content).html_safe %>
