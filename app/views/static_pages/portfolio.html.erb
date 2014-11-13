@@ -1,2 +1,24 @@
 <% provide(:title, "Portfolio") %>
-<p>Portfolio</p>
+<h1>Portfolio</h1> 
+<table class="table table-bordered">
+  <tr>
+    <td>
+      <%= image_tag("lex_d.png", :class => "img-responsive portfolio-img") %>
+      <p class="portfolio-text">
+        <a href="lex-d.herokuapp.com">Lex D</a> is a Sinatra service that takes in a string of text and returns a score that represents the lexical diversity of that text. I built Lex D while interning at <a href="www.scripted.com">Scripted.com</a> during the summer of 2014. You can read more about it on the project's <a href="https://github.com/Scripted/lex_d">Github page</a>.
+      </p>
+    </td>
+    <td><%= image_tag("rr.png", :class => "img-responsive portfolio-img") %>
+      <p class="portfolio-text">
+        Ricochet Robots is a board game made by Alex Randolph. I decided to see if I could recreate in Java using some simple Java 2D graphics.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <h3 class="text-center">
+        <a href="#">Résumé</a>
+      </h3>
+    </td>
+  </tr>
+</table>
