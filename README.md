@@ -1,7 +1,2 @@
-# Pagination for [Twitter Bootstrap 3](http://getbootstrap.com/components/#pagination)
-
-With support for:
-
-- erb
-- haml
-- slim
+# [ryanfauver.com](http://ryanfauver.com)
+This is the repository for my personal website created using Rails.
