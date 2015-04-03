@@ -4,7 +4,7 @@
   <small>Posted on <%= @blog.created_at.to_formatted_s(:long_ordinal) %></small>
 </h3>
 <p><%= @blog.content.html_safe %></p>
-
+<br>
 <h3><%= pluralize(@blog.comments.count, 'Comment')%></h3>
 <% if @blog.comments.count == 0 %>
   <i>Nothing here yet.</i>
@@ -32,7 +32,7 @@
     </div>
   <% end %>
 <%end %>
-
+<br>
 <h2>Add a comment:</h2>
 <%= form_for([@blog, @blog.comments.build]) do |f| %>
 

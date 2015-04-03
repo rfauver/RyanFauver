@@ -31,12 +31,16 @@
   background-color: #0F5933;
 }
 
+.hero-unit {
+  background-color: #fefefe;
+}
+
 h1 a{
   color: #000;
 }
 
 h1 a:hover{
-  color: #444;
+  color: #333;
   text-decoration: none;
 }
 

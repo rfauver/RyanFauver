@@ -9,8 +9,9 @@
   </h3>
   <p>
     <%= content_preview(blog.content).html_safe %>
-    <small><%= link_to " read more >>", blog %></small>
+    <br>
+    <small><%= link_to "read more >>", blog %></small>
   </p>
-
+  <br>
 <% end %>
 <%= paginate @blogs %>
