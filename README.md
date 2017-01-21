@@ -1,2 +1,5 @@
 # [ryanfauver.com](http://ryanfauver.com)
-This is the repository for my personal website created using Rails.
+
+ASCII art generated at [text-image.com](http://www.text-image.com/convert/ascii.html)
+
+Inspired by [Vulfpeck](http://vulfpeck.com/)
