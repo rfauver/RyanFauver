@@ -1,0 +1,32 @@
+html {
+  text-align: center;
+  font-family: 'Courier New';
+  padding-bottom: 300px;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 50;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #27b247;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #8ce6a1;
+}
+
+.profile-pic {
+  font-size: 7;
+  white-space: pre;
+  line-height: 70%;
+}
