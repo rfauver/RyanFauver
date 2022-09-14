@@ -1,32 +1,71 @@
+@font-face {
+  font-family: 'Bitstream Vera Sans Mono';
+  src: url('Bitstream-Vera-Sans-Mono-400.woff2') format('woff2'),
+    url('Bitstream-Vera-Sans-Mono-400.woff') format('woff');
+  font-display: fallback;
+}
+
 html {
-  text-align: center;
-  font-family: 'Courier New';
+  font-family: 'Bitstream Vera Sans Mono', 'Courier New', monospace;
   padding-bottom: 300px;
 }
 
+body {
+  max-width: 750px;
+  padding: 0 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: end;
+  width: 100%;
+}
+
 h1 {
-  font-weight: lighter;
-  font-size: 50;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: normal;
   margin-bottom: 0;
 }
 
 h3 {
+  font-size: 24px;
+  width: 100%;
   margin-top: 40px;
-  margin-bottom: 0;
+  margin-bottom: 8px;
+}
+
+p {
+  width: 100%;
+  line-height: 24px;
 }
 
 a:link, a:visited {
   text-decoration: none;
-  color: #27b247;
+  color: #2e8540;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #8ce6a1;
+  color: #41be5a;
 }
 
 .profile-pic {
-  font-size: 7;
+  width: unset;
+  font-family: 'Courier New', monospace;
+  font-size: 2.5px;
   white-space: pre;
   line-height: 70%;
+  margin-left: 20px;
+  margin-right: 24px;
+  transform: scaleX(1.2);
+  transition: 0.8s ease font-size;
+}
+
+.profile-pic:hover {
+  font-size: 6px;
 }
