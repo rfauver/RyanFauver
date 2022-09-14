@@ -76,3 +76,26 @@ a:hover {
     max-width: 850px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #2a303a;
+    color: #fff;
+  }
+
+  a:link, a:visited {
+    color: #41be5a;
+  }
+
+  a:hover {
+    color: #2e8540;
+  }
+
+  .profile-pic {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+  }
+}
